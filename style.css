@@ -41,22 +41,22 @@ p {
 
   /* non-critical appearance styles */
   list-style: none;
-  background: #111;
+  background: #000000;
 }
 
 /* Navigation Menu - List items */
 .nav-item {
   /* non-critical appearance styles */
   width: 200px;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .nav-item a {
   /* non-critical appearance styles */
   display: block;
   padding: 1em;
-  background: linear-gradient(135deg, #16181c 0%, #2a2f39 100%);
+  /* background: linear-gradient(135deg, #16181c 0%, #2a2f39 100%); */
   color: white;
   font-size: 1.2em;
   text-decoration: none;
@@ -64,8 +64,8 @@ p {
 }
 
 .nav-item a:hover {
-  color: #5e81ac;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, #2e3440 100%);
+  color: #88c0d0;
+  background: #4c566a;
 }
 
 /* Site Wrapper - Everything that isn't navigation */
@@ -83,10 +83,11 @@ p {
   /* non-critical apperance styles */
   padding: 4em;
   background-image: linear-gradient(
-    135deg,
-    rgb(46, 52, 64) 0%,
-    rgb(46, 52, 64) 35%,
-    rgb(46, 52, 64) 100%
+    to bottom right,
+    #4c566a,
+    #434c5e,
+    #3b4252,
+    #2e3440
   );
   background-size: 200%;
 }
@@ -125,7 +126,7 @@ label[for="nav-trigger"] {
 
 .nav-trigger:checked ~ .site-wrap {
   left: 200px;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 5px #81a1c1a9;
 }
 
 body {
@@ -135,33 +136,54 @@ body {
 
 /* Additional non-critical styles */
 
-h3,
+b {
+  color: #88c0d0;
+}
 p {
   max-width: 600px;
   margin: 0 auto 32px;
+  font-size: 1.26563em;
+  line-height: 1.2;
 }
-
+h3 {
+  max-width: 600px;
+  margin: 0 auto;
+}
 h3 {
   color: #d8dee9;
 }
 
 h4 {
   max-width: 600px;
-  margin: 0 auto 12px;
+  margin: 32px auto 12px;
   color: #d8dee9;
+  font-size: 24px;
 }
 h1 {
   max-width: 600px;
   margin: 0 auto;
   font-size: 40px;
-  line-height: 0.7;
+  /* line-height: 0.7; */
   letter-spacing: -0.5px;
+  font-weight: bold;
 }
 code {
   padding: 2px;
   background: #5e81ac;
 }
 
+button {
+  cursor: pointer;
+  border: medium none;
+  padding: 0.375em 0.75em;
+  border-radius: 0.25em;
+  font-size: 1.125em;
+  background-color: rgb(136, 192, 208);
+  color: #4c566a;
+  margin: 0.4em 0.25em;
+  transition: background-color 200ms ease-in 0s, border-color 200ms ease-in 0s,
+    box-shadow 200ms ease-in 0s, color 200ms ease-in 0s;
+}
 /* Micro reset */
 *,
 *:before,
