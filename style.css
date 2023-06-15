@@ -18,8 +18,8 @@
 
 #ed0d0d
 #cccccc
- #000
- #ef2828
+#000
+#ef2828
 */
 
 * {
@@ -68,8 +68,8 @@ p {
 }
 
 .nav-item a:hover {
-  color: #88c0d0;
-  background: #4c566a;
+  color: #fff;
+  background: #ef2828;
 }
 
 /* Site Wrapper - Everything that isn't navigation */
@@ -86,7 +86,6 @@ p {
   padding: 4em;
   background-color: #000;
   background-size: 200%;
-  background-image: url();
 }
 
 /* Nav Trigger */
@@ -123,7 +122,7 @@ label[for="nav-trigger"] {
 
 .nav-trigger:checked ~ .site-wrap {
   left: 200px;
-  box-shadow: 0 0 5px 5px #81a1c1a9;
+  box-shadow: 0 0 5px 5px #ef2828;
 }
 
 body {
